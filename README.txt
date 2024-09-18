@@ -4,3 +4,20 @@ Starter Code for Reaction Timer
 Run npm install to install all dependencies 
 The above uses package.json to build the project
 Note .gitignore is set to ignore node_modules
+
+Description of code:
+
+My reaction timer is initiated when the start button is clicked. 
+At that point, the start button is disabled and the stop button is enabled.
+The user must wait for the stop button to turn red to click,
+otherwise this is considered "cheating" and the game restarts after 3s.
+Once the user properly stops the game, the reaction time is logged as
+the amount of time between the color change and the "stop" click, which
+is displayed to the user who can choose to submit it or to play
+again to get a better time. 
+
+There are also some protections to prevent someone from submitting their
+name before they have a reaction time, or from submitting the same reaction
+time twice through the creation a "submit" variable that control when 
+a submission can be made (only after a full round of start/stop)
+
